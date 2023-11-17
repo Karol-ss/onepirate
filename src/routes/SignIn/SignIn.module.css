@@ -1,0 +1,40 @@
+.signin input{
+    background: #fff;
+    width: 500px;
+}
+
+
+.signin{
+    height:720px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.su{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #28282A;
+    font-family: Work Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    text-decoration-line: underline;
+    text-transform: none;
+}
+
+.fp{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #28282A;
+    font-family: Work Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    text-decoration-line: underline;
+    
+}

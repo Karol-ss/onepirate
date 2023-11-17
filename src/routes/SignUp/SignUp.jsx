@@ -48,18 +48,19 @@ export default function SignUp() {
   };
 
   return (
-    <ThemeProvider theme={defaultTheme}>
+    
       <Container component="main" className={styles.signup} maxWidth="xs">
         <CssBaseline />
         <Box
           sx={{
             // marginTop: 8,
-            padding: "16px",
+            padding: "3.5em",
             justifyContent: "center",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
             background: "#F5F6FF",
+            width: "800px",
           }}
         >
           <Typography
@@ -82,20 +83,13 @@ export default function SignUp() {
           >
             Sign up
           </Typography>
-          <Grid container justifyContent="flex-end">
-            <Grid item>
-              <Link className= {styles.si} to={"/SignIn"}>
-                <Button
-                  color="inherit"
-                  sx={{
-
-                  }}
-                >
-                  Already have an account?
-                </Button>
-              </Link>
-            </Grid>
-          </Grid>
+          <Link className={styles.si} to={"/SignIn"}>
+            <Button href="SignIn" color="inherit" sx={{}}>
+              <Typography className={styles.si}>
+              Already have an account?
+              </Typography>
+            </Button>
+          </Link>
           <Box
             component="form"
             noValidate
@@ -197,7 +191,9 @@ export default function SignUp() {
               type="submit"
               fullWidth
               variant="contained"
-              sx={{ mt: 3, mb: 2, 
+              sx={{
+                mt: 3,
+                mb: 2,
                 background: "#6867AC",
                 color: "#FFF",
                 fontFamily: "Roboto Condensed",
@@ -205,13 +201,15 @@ export default function SignUp() {
                 fontStyle: "normal",
                 fontWeight: 700,
                 lineHeight: "24.5px",
-                textTransform: "uppercase", }}
+                textTransform: "uppercase",
+                height: "3.5em",
+              }}
             >
               Sign Up
             </Button>
           </Box>
         </Box>
       </Container>
-    </ThemeProvider>
+    
   );
 }

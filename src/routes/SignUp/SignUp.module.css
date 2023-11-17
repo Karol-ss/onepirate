@@ -2,6 +2,7 @@
 
 .signup input{
     background: #fff;
+    width: 500px;
 }
 
 .signup{
@@ -9,12 +10,12 @@
     display: flex !important;
     justify-content: center;
     align-items: center;
+    
 }
 
 .si {
     display: flex;
     justify-content: center !important;
-    flex-wrap: wrap;
     color: #28282A;
     font-family: Work Sans;
     font-size: 14px;
@@ -22,5 +23,7 @@
     font-weight: 400;
     line-height: 21px;
     text-decoration-line: underline;
+    text-transform: none;
+    
     
 }
