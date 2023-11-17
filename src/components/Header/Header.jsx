@@ -7,19 +7,21 @@ import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 
+import styles from "./Header.module.css";
+
 const navigation = [
   { component: "/", name: "Home" },
-  { component: "/signIn", name: "SignIn" },
-  { component: "/signUp", name: "SignUp" },
+  { component: "signIn", name: "SignIn" },
+  { component: "signUp", name: "SignUp" },
 ];
 
 export default function Header() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-    <AppBar sx={{background: "#28282A",}} position="static">
+      <AppBar sx={{ background: "#28282A" }} position="static">
         <Toolbar>
           <Typography
-          align="center"
+            align="center"
             variant="h6"
             component="div"
             sx={{
@@ -34,25 +36,41 @@ export default function Header() {
               textTransform: "uppercase",
             }}
           >
-            Onepirate
+            <Link className={styles.link} to={"/"}>
+              Onepirate
+            </Link>
           </Typography>
-          <Button color="inherit" sx={{
-            fontFamily: "Roboto Condensed",
-            fontSize: "16px",
-            fontStyle: "normal",
-            fontWeight: 700,
-            lineHeight: "25.6px",
-            textTransform: "uppercase",
-          }}>Sign in</Button>
-          <Button color="inherit" sx={{
-            color: "#6867AC",
-            fontFamily: "Roboto Condensed",
-            fontSize: "16px",
-            fontStyle: "normal",
-            fontWeight: 700,
-            lineHeight: "25.6px",
-            textTransform: "uppercase",
-          }}>Sign up</Button>
+          <Link className={styles.signIn} to={"/SignIn"}>
+            <Button
+              color="inherit"
+              sx={{
+                fontFamily: "Roboto Condensed",
+                fontSize: "16px",
+                fontStyle: "normal",
+                fontWeight: 700,
+                lineHeight: "25.6px",
+                textTransform: "uppercase",
+              }}
+            >
+              Sign in
+            </Button>
+          </Link>
+          <Link to={"/SignUp"}>
+            <Button
+              color="inherit"
+              sx={{
+                color: "#6867AC",
+                fontFamily: "Roboto Condensed",
+                fontSize: "16px",
+                fontStyle: "normal",
+                fontWeight: 700,
+                lineHeight: "25.6px",
+                textTransform: "uppercase",
+              }}
+            >
+              Sign up
+            </Button>
+          </Link>
         </Toolbar>
       </AppBar>
     </Box>
