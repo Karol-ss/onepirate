@@ -1,9 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
 .footer{
-background-color: #FFF5F8;
+    background: #FFF5F8;
 width: 100%;
 
 }
 
+.icons{
+    display: flex;
+    width: 48px;
+    height: 48px;
+    padding: 13px 0px;
+    justify-content: center;
+    flex-shrink: 0;
+    gap: 1em;
+}
+
+
+
 .legal{
+    display: flex;
+    flex-direction: column;
+    margin-left: 11em;
+    line-height: 28.8px; 
     
 }
+
+
+
+.legal p{
+    color: #28282A;
+font-family: Work Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 22.88px; 
+text-decoration-line: underline;
+}
+
+
+.cool {
+    border-bottom: 3px solid #030303;
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 700;
+    text-wrap: nowrap;
+    width: 50px;
+    font-size: 18px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    font-family: Roboto Condensed;
+    text-transform: uppercase;
+  }
+
+  .language{
+font-family: Roboto Condensed;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 28.8px; 
+text-transform: uppercase;
+  }

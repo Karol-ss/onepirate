@@ -1,18 +1,19 @@
 import { Link } from "react-router-dom";
 import styles from "./Home.module.css";
-import aviao from "../../assets/aviao.jpg";
+import aviao from "../../assets/aviao.png";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import { Icon } from "@mui/material";
 import { ArrowDownward, AttachMoney, Deck, Sailing } from "@mui/icons-material";
 import listras from "../../assets/fundolistra.png";
 import Categories from "../../components/Categories/Categories";
+import Operation from "../../components/Operation/operation";
 
 const Home = () => {
   return (
     <>
       <div>
-        <div className={styles.uys}>
+        <div className={styles.banner}>
           <img src={aviao} alt="imagem de avião" />
           <div>
             <p>
@@ -67,15 +68,16 @@ const Home = () => {
         </div>
       </div>
       <div className={styles.info}>
-       
-          <img src={listras} alt="" />
+        <img src={listras} alt="" />
+
+        <div className={styles.sbm}>
           <div className={styles.sunshade}>
             <Icon
               sx={{
                 width: "100%",
                 height: "55px",
 
-                marginTop: -75,
+                // marginTop: -75,
               }}
             >
               <Deck
@@ -98,7 +100,7 @@ const Home = () => {
                 width: "100%",
                 height: "55px",
 
-                marginTop: -7,
+                // marginTop: -7,
               }}
             >
               <Sailing
@@ -119,9 +121,9 @@ const Home = () => {
               sx={{
                 width: "100%",
                 height: "55px",
-                display: "flex",
-                justifyContent: "flex-end",
-                marginTop: -7,
+                // display: "flex",
+                // justifyContent: "flex-end",
+                // marginTop: -7,
               }}
             >
               <AttachMoney
@@ -138,8 +140,19 @@ const Home = () => {
             </h2>
           </div>
         </div>
-    
-      <Categories />
+      </div>
+      <div className={styles.meinho}>
+        <p>
+          <span className={styles.destaque}>
+            For all tastes and all desires
+          </span>
+        </p>
+        <Categories />
+
+        <Operation />
+        
+      </div>
+
     </>
   );
 };

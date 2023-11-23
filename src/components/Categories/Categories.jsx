@@ -18,53 +18,53 @@ const images = [
   {
     url: snorkeling,
     title: "Snorkeling",
-    width: "40%",
+    width: "460px",
   },
   {
     url: massage ,
-    title: "Burgers",
-    width: "10%",
+    title: "Massage",
+    width: "230px",
   },
   {
     url: hiking,
-    title: "Camera",
-    width: "40%",
+    title: "Hiking",
+    width: "460px",
   },
   {
     url: tour,
-    title: "Camera",
-    width: "30%",
+    title: "Tour",
+    width: "437px",
   },
   {
     url: gastronomy,
-    title: "Camera",
-    width: "30%",
+    title: "Gastronomy",
+    width: "438px",
   },
   {
     url: shopping,
-    title: "Camera",
-    width: "30%",
+    title: "Shopping",
+    width: "276px",
   },
   {
     url: walking,
-    title: "Camera",
-    width: "30%",
+    title: "Walking",
+    width: "460px",
   },
   {
     url: fitness,
-    title: "Camera",
-    width: "30%",
+    title: "Fitness",
+    width: "230px",
   },
 {
   url: reading,
-  title: "Camera",
-  width: "30%",
+  title: "Reading",
+  width: "460px",
 },
 ];
 
 const ImageButton = styled(ButtonBase)(({ theme }) => ({
   position: "relative",
-  height: 200,
+  height: 360,
   [theme.breakpoints.down("sm")]: {
     width: "100% !important", // Overrides inline-style
     height: 100,
@@ -129,7 +129,7 @@ const ImageMarked = styled("span")(({ theme }) => ({
 export default function Categories() {
   return (
     <Box
-      sx={{ display: "flex", flexWrap: "wrap", minWidth: 300, width: "100%" }}
+      sx={{ display: "flex", flexWrap: "wrap", minWidth: 300, width: "80%", justifyContent:"center"}}
     >
       {images.map((image) => (
         <ImageButton
