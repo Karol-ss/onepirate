@@ -17,53 +17,53 @@ const Home = () => {
             <p>
               <span className={styles.destaque}>upgrade your sundays</span>
             </p>
-          </div>
-          <div className={styles.enjoy}>
-            <h3>
-              Enjoy secret offers up to -70% off the best luxury hotels every
-              Sunday.
-            </h3>
-          </div>
+            <div className={styles.enjoy}>
+              <h3>
+                Enjoy secret offers up to -70% off the best luxury hotels every
+                Sunday.
+              </h3>
+            </div>
 
-          <Button
-            className={styles.register}
-            href="SignUp"
-            variant="contained"
-            sx={{
-              background: "#6867AC",
-              fontFamily: "Roboto Condensed",
-              fontSize: "16px",
-              fontWeight: 700,
-              lineHeight: "28px",
-              textTransform: "uppercase",
-              textDecoration: "none",
-              width: "200px",
-              padding: "15px 67px 17px 67px",
-              borderRadius: "0",
-              display: "flex",
-              alignItems: "center",
-            }}
-          >
-            Register
-          </Button>
-
-          <h4>Discover the experience</h4>
-          <Icon
-            sx={{
-              width: "100%",
-              display: "flex",
-              justifyContent: "center",
-              paddingTop: "100px",
-            }}
-          >
-            <ArrowDownward
+            <Button
+              className={styles.register}
+              href="SignUp"
+              variant="contained"
               sx={{
-                color: "#FFBCD1",
-                width: "19.72px",
-                height: "20.30px",
+                background: "#6867AC",
+                fontFamily: "Roboto Condensed",
+                fontSize: "16px",
+                fontWeight: 700,
+                lineHeight: "28px",
+                textTransform: "uppercase",
+                textDecoration: "none",
+                width: "200px",
+                padding: "15px 67px 17px 67px",
+                borderRadius: "0",
+                display: "flex",
+                alignItems: "center",
               }}
-            />
-          </Icon>
+            >
+              Register
+            </Button>
+
+            <h4>Discover the experience</h4>
+            <Icon
+              sx={{
+                width: "100%",
+                display: "flex",
+                justifyContent: "center",
+            
+              }}
+            >
+              <ArrowDownward
+                sx={{
+                  color: "#FFBCD1",
+                  width: "19.72px",
+                  height: "20.30px",
+                }}
+              />
+            </Icon>
+          </div>
         </div>
       </div>
       <div className={styles.information}>
