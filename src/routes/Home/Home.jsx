@@ -6,6 +6,7 @@ import Button from "@mui/material/Button";
 import { Icon } from "@mui/material";
 import { ArrowDownward, AttachMoney, Deck, Sailing } from "@mui/icons-material";
 import listras from "../../assets/fundolistra.png";
+import Categories from "../../components/Categories/Categories";
 
 const Home = () => {
   return (
@@ -52,7 +53,6 @@ const Home = () => {
                 width: "100%",
                 display: "flex",
                 justifyContent: "center",
-            
               }}
             >
               <ArrowDownward
@@ -66,72 +66,80 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className={styles.information}>
-        <img src={listras} alt="" />
-      </div>
       <div className={styles.info}>
-        <Icon
-          sx={{
-            width: "100%",
-            height: "55px",
-            display: "flex",
-            justifyContent: "flex-start",
+       
+          <img src={listras} alt="" />
+          <div className={styles.sunshade}>
+            <Icon
+              sx={{
+                width: "100%",
+                height: "55px",
 
-            marginTop: -75,
-          }}
-        >
-          <Deck
-            sx={{
-              width: "50px",
-              height: "50px",
-            }}
-          />
-        </Icon>
-        <div className={styles.sunshade}>
-          <h1>The best luxury hotels</h1>
-          <div className={styles.definition}>
+                marginTop: -75,
+              }}
+            >
+              <Deck
+                sx={{
+                  width: "50px",
+                  height: "50px",
+                }}
+              />
+            </Icon>
+            <h1>The best luxury hotels</h1>
             <h2>
               From the latest trendy boutique hotel to the iconic palace with
               XXL pool, go for a mini-vacation just a few subway stops away from
               your home.
             </h2>
           </div>
+          <div className={styles.boat}>
+            <Icon
+              sx={{
+                width: "100%",
+                height: "55px",
+
+                marginTop: -7,
+              }}
+            >
+              <Sailing
+                sx={{
+                  width: "50px",
+                  height: "50px",
+                }}
+              />
+            </Icon>
+            <h1>New experiences</h1>
+            <h2>
+              Privatize a pool, take a Japanese bath or wake up in 900m2 of
+              garden... your Sundays will not be alike.
+            </h2>
+          </div>
+          <div className={styles.money}>
+            <Icon
+              sx={{
+                width: "100%",
+                height: "55px",
+                display: "flex",
+                justifyContent: "flex-end",
+                marginTop: -7,
+              }}
+            >
+              <AttachMoney
+                sx={{
+                  width: "50px",
+                  height: "50px",
+                }}
+              />
+            </Icon>
+            <h1>Exclusive rates</h1>
+            <h2>
+              By registering, you will access specially negotiated rates that
+              you will not find anywhere else.
+            </h2>
+          </div>
         </div>
-
-        <Icon
-          sx={{
-            width: "100%",
-            height: "55px",
-            display: "flex",
-            justifyContent: "center",
-            marginTop: -7,
-          }}
-        >
-          <Sailing
-            sx={{
-              width: "50px",
-              height: "50px",
-            }}
-          />
-        </Icon>
-
-        <Icon
-          sx={{
-            width: "100%",
-            height: "55px",
-            display: "flex",
-            justifyContent: "flex-end",
-            marginTop: -7,
-          }}
-        >
-          <AttachMoney
-            sx={{
-              width: "50px",
-              height: "50px",
-            }}
-          />
-        </Icon>
-      </div>
+    
+      <Categories />
     </>
   );
 };

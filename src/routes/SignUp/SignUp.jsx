@@ -53,7 +53,7 @@ export default function SignUp() {
         <CssBaseline />
         <Box
           sx={{
-            // marginTop: 8,
+            marginTop: 9,
             padding: "3.5em",
             justifyContent: "center",
             display: "flex",
